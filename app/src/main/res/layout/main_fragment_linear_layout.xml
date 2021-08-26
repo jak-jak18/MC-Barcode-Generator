@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/userNameField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:inputType="textPersonName"
+        android:text="User Name" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_margin="8dp"
+        android:inputType="textPassword"
+        android:text="Password" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:text="Update Credentials" />
+
+    <ImageView
+        android:id="@+id/userNameBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_margin="8dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageView
+        android:id="@+id/passwordBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_margin="8dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+</LinearLayout>
