@@ -24,7 +24,7 @@ class MainFragment : Fragment() {
         fun newInstance() = MainFragment()
     }
 
-    private lateinit var viewModel: MainViewModel
+//    private lateinit var viewModel: MainViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,9 +35,8 @@ class MainFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+//        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         // TODO: Use the ViewModel
-        // TODO: Test
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -76,7 +75,6 @@ class MainFragment : Fragment() {
     }
 
     fun generateBarcode(userName: String, pw: String) {
-        val bitmap = BarcodeGenerator(EncodeTypes.CODE_128, userName).generateBarCodeImage()
         userNameBarcode.setImageBitmap(
             BarcodeGenerator(EncodeTypes.CODE_128, userName).generateBarCodeImage()
         )
